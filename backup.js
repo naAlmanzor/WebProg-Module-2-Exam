@@ -59,7 +59,7 @@ function nextPet(){
     document.getElementById("petName").innerHTML=names[0]+", "+age[0];
         
     
-    // document.getElementById("petAge").innerHTML=age[0];
+
 
     breed.shift();
     document.getElementById("petType").innerHTML=breed[0];
@@ -94,7 +94,7 @@ function heartPet(){
 
     //pet age
     var divAge = document.createElement("div");
-    divAge.innerHTML = " " + age[0];
+    divAge.innerHTML = age[0];
 
     
     //image 

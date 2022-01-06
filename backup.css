@@ -79,6 +79,24 @@ body {
 	border-radius: 70px;
 }
 
+.side .messages .user {
+	padding: 0 10px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	font-size: 18px;
+}
+
+.side .messages .text {
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 10px;
+	font-weight: 300;
+	font-size: 15px;
+	opacity: 0.8;
+}
+
 .side .messages:hover {
 	box-shadow: 0 0 15px 0 rgba(43, 78, 78, 0.1);
 	border-right: 5px solid #fd5068;
@@ -111,6 +129,9 @@ body {
 	text-shadow: 1px 1px 5px #444;
 }
 
+.content .card .user .name span {
+	font-size: 26px;
+}
 
 .content .card .local {
 	display: flex;
@@ -118,9 +139,14 @@ body {
 	padding: 0 0 20px 0;
 }
 
+.content .card .local i {
+	margin: 5px 0;
+	color: #fff;
+}
+
 .content .card .local span {
 	color: #fff;
-	padding: 0 5px;
+	padding: 0 10px;
 	text-shadow: 1px 1px 5px #444;
 }
 
@@ -159,4 +185,9 @@ body {
 .content .buttons .no:hover,
 .content .buttons .heart:hover {
 	transform: scale(1.1);
+}
+
+.content .buttons .star {
+	width: 60px;
+	height: 60px;
 }
