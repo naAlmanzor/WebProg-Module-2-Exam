@@ -41,10 +41,17 @@ var breed = [
     "Shiba Inu",
 ];
 
+function set(){
+    document.getElementById("desc").src=images[0];    
+    document.getElementById("petName").innerHTML=names[0]+", ";
+    document.getElementById("petType").innerHTML=breed[0];
+}
+
 function nextPet(){
     
     images.shift();
     document.getElementById("desc").src=images[0];    
+    // images.shift();
 
     names.shift();
     // age.shift();
@@ -55,7 +62,7 @@ function nextPet(){
 
     breed.shift();
     document.getElementById("petType").innerHTML=breed[0];
-
+    
     if (images.length==0){
         // Placeholder
         document.getElementById("desc").src="assets/test.png";
@@ -71,14 +78,46 @@ function nextPet(){
 }
 
 function heartPet(){
-    nextPet();
+    //div-messages
+    var divMsgs = document.createElement("div");
+    divMsgs.className = "messages";
+
+    //div-avatar
+    var divAvt = document.createElement("div");
+    divAvt.className = "avatar";
+    divMsgs.appendChild(divAvt);
+
+    //pets
+    // var divMsg = document.createElement("div");
+    // divMsg.className = "message";
+
+    //pet name - na stuck ako dito
+    // bat hindi nagalabas sa gilid yung pag mag like. ayaw niya din mag change. okay wait
+
+    // copy mo dw ulit ito na file, yung naka comment mga di needed na stuff
+
+    //create div
+    var divName = document.createElement("div")
+    
+    // divName.setAttribute("id", "test") 
+    // divName.appendChild(name);
+    divName.innerHTML = 'Sample';
+    //image 
+    var iconurl = images[0]; 
+    var img = document.createElement("img");
+    img.src=iconurl;
+    img.width=40;
+    img.height=40;
+    divAvt.appendChild(img);
     
     // console.log('THe heart button was clicked');
-
+    
+    document.getElementById("likedPets").appendChild(divMsgs);
+    
+    nextPet();
 }
 
 function dislikePet(){
     nextPet();
-
     // console.log('THe dislike button was clicked');
 }

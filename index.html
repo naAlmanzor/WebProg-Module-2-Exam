@@ -17,7 +17,7 @@
 </head>
 
 
-<body>
+<body onload="set()">
     <div class="container">
         <!-- Side Bar -->
         <div class="side">
@@ -33,10 +33,9 @@
                 </ul>
             </div>
 
+            <div id="likedPets" class="message"></div>
+<!--             
             <div class="messages">
-                <ul id="likedPets"></ul>
-            </div>
-            <!-- <div class="messages">
                 <div class="avatar">
                     <img src="https://randomuser.me/api/portraits/lego/0.jpg" alt="" />
                 </div>
@@ -120,7 +119,7 @@
                         alt=""
                     />
                     <div class="profile" id="profile">
-                        <div class="name" id="petName">Kubo, <span id="petAge">2</span></div>
+                        <div class="name" id="petName"></div>
                         <div class="local">
                             <span id="petType">Syberian Husky</span>
                         </div>
