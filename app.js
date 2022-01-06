@@ -45,20 +45,16 @@ function nextPet(){
     
     images.shift();
     document.getElementById("desc").src=images[0];    
-       
-        // nameIndex = (nameIndex+1)%(names.length);
+
     names.shift();
-    age.shift();
-    document.getElementById("petName").innerHTML=names[0]+", "+age[0];
+    // age.shift();
+    document.getElementById("petName").innerHTML=names[0]+", ";
         
     
-    document.getElementById("petAge").innerHTML=age[0];
+    // document.getElementById("petAge").innerHTML=age[0];
 
     breed.shift();
     document.getElementById("petType").innerHTML=breed[0];
-        // breed.splice(breedData, 1);
-
-   
 
     if (images.length==0){
         // Placeholder
@@ -71,10 +67,7 @@ function nextPet(){
         document.getElementById("dislike").style.filter = "brightness(50%)";
         document.getElementById("heart").style.filter = "brightness(50%)";
     }
-    // images.shift();
-    // console.log("Images Left: "+images.length);
     console.log(images)
-    // console.log("Names Left: "+names.length);
 }
 
 function heartPet(){
