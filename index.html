@@ -19,6 +19,7 @@
 
 <body>
     <div class="container">
+        <!-- Side Bar -->
         <div class="side">
             <div class="header">
                 <div class="avatar">
@@ -104,33 +105,34 @@
                 </div>
             </div>
         </div>
+        <!-- Content Area -->
         <div class="content">
             <div class="card">
                 <div class="user">
                     <img
+                        id = "desc"
                         class="user"
-                        src="https://randomuser.me/api/portraits/lego/6.jpg"
+                        src="https://randomuser.me/api/portraits/lego/1.jpg"
                         alt=""
                     />
-                    <div class="profile">
-                        <div class="name">Dog <span>2</span></div>
+                    <div class="profile" id="profile">
+                        <div class="name" id="petName">Kubo, <span id="petAge">2</span></div>
                         <div class="local">
-                            <span>Syberian Husky</span>
+                            <span id="petType">Syberian Husky</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="buttons">
-                <div class="no">
+            <div class="buttons" id="buttons">
+                <button class="no" id="dislike" onclick="dislikePet()">
                     <i class="fas fa-times"></i>
-                </div>
-                <div class="heart">
+                </button>
+                <button class="heart" id="heart" onclick="heartPet()">
                     <i class="fas fa-heart"></i>
-                </div>
+                </button>
             </div>
         </div>
     </div>
 </body>
-
-
+<script src="app.js"></script>
 </html>
