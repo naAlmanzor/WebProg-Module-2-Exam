@@ -1,14 +1,14 @@
 var images = [
-    "https://randomuser.me/api/portraits/lego/1.jpg",
-    "https://randomuser.me/api/portraits/lego/2.jpg",
-    "https://randomuser.me/api/portraits/lego/3.jpg",
-    "https://randomuser.me/api/portraits/lego/4.jpg",
-    "https://randomuser.me/api/portraits/lego/5.jpg",
-    "https://randomuser.me/api/portraits/lego/6.jpg",
-    "https://randomuser.me/api/portraits/lego/7.jpg",
-    "https://randomuser.me/api/portraits/lego/8.jpg",
-    "https://randomuser.me/api/portraits/lego/9.jpg",
-    "https://randomuser.me/api/portraits/lego/10.jpg",
+    "assets/kubo.png",
+    "assets/nunu.png",
+    "assets/gobta.png",
+    "assets/beni-enma.png",
+    "assets/koyanskaya.png",
+    "assets/hina.png",
+    "assets/momoji.png",
+    "assets/cidala.png",
+    "assets/vikala.png",
+    "assets/junnie.png",
 ];
 
 var names = [
@@ -29,7 +29,7 @@ var age = [
 ];
 
 var breed = [
-    "Syberian Husky",
+    "Siberian Husky",
     "Persian",
     "Eurasian Otter",
     "Parrot",
@@ -66,8 +66,9 @@ function nextPet(){
     
     if (images.length==0){
         // Placeholder
-        document.getElementById("desc").src="assets/test.png";
+        // document.getElementById("desc").src="assets/test.png";
         document.getElementById("profile").style.visibility="hidden";
+        document.getElementById("cardUser").style.visibility="hidden";
         
         // Disables button
         document.getElementById("dislike").disabled=true;
