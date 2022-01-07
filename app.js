@@ -42,7 +42,7 @@ var breed = [
 ];
 
 function set(){
-    document.getElementById("desc").src=images[0];    
+    document.getElementById("petImage").src=images[0];    
     document.getElementById("petName").innerHTML=names[0]+", " +age[0];
     document.getElementById("petType").innerHTML=breed[0];
 }
@@ -50,25 +50,20 @@ function set(){
 function nextPet(){
     
     images.shift();
-    document.getElementById("desc").src=images[0];    
-    // images.shift();
+    document.getElementById("petImage").src=images[0];    
 
     names.shift();
     age.shift();
-    // age.shift();
+
     document.getElementById("petName").innerHTML=names[0]+", "+age[0];
-        
-    
-    // document.getElementById("petAge").innerHTML=age[0];
 
     breed.shift();
     document.getElementById("petType").innerHTML=breed[0];
     
     if (images.length==0){
         // Placeholder
-        // document.getElementById("desc").src="assets/test.png";
+        document.getElementById("petImage").src="assets/default-image.png";
         document.getElementById("profile").style.visibility="hidden";
-        document.getElementById("cardUser").style.visibility="hidden";
         
         // Disables button
         document.getElementById("dislike").disabled=true;
@@ -102,19 +97,13 @@ function heartPet(){
     var iconurl = images[0]; 
     var img = document.createElement("img");
     img.src=iconurl;
-    img.width=40;
-    img.height=40;
     divAvt.appendChild(img);
     
-    // console.log('THe heart button was clicked');
-    
     document.getElementById("likedPets").appendChild(divMsgs).appendChild(divName).appendChild(divAge);
-
     
     nextPet();
 }
 
 function dislikePet(){
     nextPet();
-    // console.log('THe dislike button was clicked');
 }

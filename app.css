@@ -91,7 +91,7 @@ body {
 	height: 450px;
 }
 
-.content .card .user {
+.content .card .pet {
 	width: 380px;
 	height: 450px;
 	object-fit: cover;
@@ -99,13 +99,13 @@ body {
 	box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.5);
 }
 
-.content .card .user .profile {
+.content .card .pet .profile {
 	position: absolute;
 	bottom: 0px;
 	left: 20px;
 }
 
-.content .card .user .name {
+.content .card .pet .name {
 	color: #fff;
 	font-size: 32px;
 	font-weight: 700;
